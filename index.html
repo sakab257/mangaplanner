@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaPlanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Icones venues de Google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+</head>
+<body>
+    <header>
+        <!--Header fini faut juste mettre le javascript mtn-->
+        <a href="#" id="headerLogo" style="text-decoration: none;"> 
+            <img src="img/logo.png" alt="Logo" height="40px" width="40px">
+            <h1>MangaPlanner</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#new-release">Nouvelles sorties</a></li>
+                <li><a href="#calendar">Calendrier</a></li>
+                <li><a href="#classement">Classement</a></li>
+                <li><a href="#all-mangas">mangas</a></li>
+            </ul>
+        </nav>
+        <!--<input id="searchBar" type="text" placeholder="Rechercher des animes...">-->
+        <a href="#"><span class="material-symbols-outlined">person</span></a>
+    </header>
+    <section id="first-page">
+        <p id="first-page-manga-genre">Aventure / Dark Fantasy / Arts Martiaux</p>
+        <h2>Demon Slayer : <br>Kimetsu no Yaiba</h2>
+        <img src="img/zenitsu-demon-slayer.png" alt="zenitsu-image" width="400px" height="400px">
+        <div id="partie-gauche">
+            <p id="first-page-manga-synopsis">
+                Un jeune vendeur de charbon nommé Tanjiro mène une vie sans histoire dans les montagnes, 
+                jusqu'au jour tragique où il découvre son village et sa famille massacrés par un démon. 
+                La seule survivante de cette tragédie est sa jeune soeur Nezuko. 
+                Hélas, au contact du démon, elle s'est métamorphosée en monstre féroce... 
+                Afin de renverser le processus et de venger sa famille, Tanjiro décide de partir en quête de vérité. 
+                Pour le jeune héros et sa soeur, c'est une longue aventure de sang et d'acier qui commence !
+            </p>
+        </div>
+        <div id="partie-droite">
+            <button type="submit" id="partie-droite-bouton">Lire</button>
+            <p id="manga-chapter">Ch. 206</p>
+        </div>
+    </section>
+    <section id="new-release">
+        <h2>NOUVELLES SORTIES</h2>
+        <div id="card-manga-release">
+
+        </div>
+    </section>
+    <section id="calendar"></section>
+    <section id="classement"></section>
+    <section id="all-mangas"></section>
+</body>
+</html>
