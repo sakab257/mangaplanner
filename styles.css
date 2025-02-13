@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+
+body{
+    background-image: url("img/fond.svg");
+    background-size: cover;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+HEADER
+
+
+
+
+
+
+
+
+
+
+*/
+
+header{
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1{
+    margin-left: 10px;
+    color: azure;
+    font-size: 1.2em;
+
+}
+
+header a h1:hover{
+    color: rgb(36, 236, 254);
+}
+
+#headerLogo{
+    align-items: center;
+    display: flex;
+}
+
+#headerLogo img{
+    border: 0px;
+    transform: scale(1.2);
+    border-radius: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    
+    a{
+        position: relative;
+        font-size: 0.9em;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: azure;
+        margin: 0 15px;
+    }
+
+    a:hover{
+        color: rgb(36, 236, 254);
+    }
+    
+    a::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+        width: 0;
+        height: 2px;
+        background-color: rgb(36, 236, 254);
+        transition: width 0.2s ease-in;
+    }
+
+    a:hover::after{
+        width: 100%;
+    }
+}
+
+#headerLogIn{
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#searchBar{
+    border: none;
+    border-radius: 15px;
+    padding: 10px 200px 10px 15px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    transform: scale(1.5);
+}
+
+.material-symbols-outlined:hover{
+    color: rgb(36, 236, 254);
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+PREMIERE PAGE
+
+
+
+
+
+
+
+
+
+
+*/
+
+#first-page{
+    position: relative;
+    top: 20px;
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#first-page-manga-genre{
+    
+    position: absolute;
+    top: 6%;
+    margin: 0 auto;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7em;
+}
+
+#first-page h2{
+    
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    font-size: 4.5em;
+    z-index: -1;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+}
+
+#first-page img {
+    align-self: center;
+    position: relative;
+    top: 15%;
+    transform: scale(1.1);
+}
+
+#first-page-manga-synopsis{
+    position: relative;
+    left: 15%;
+    width: 25%;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+}
+
+#partie-droite{
+    
+    position: relative;
+    left: 25%;
+    bottom: 10%;
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partie-droite-bouton{
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: rgb(77, 128, 165);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 0px;
+    transform: scale(1.25);
+}
+
+#partie-droite-bouton:hover{
+    background-color: rgb(55, 96, 125)
+}
+
+#manga-chapter{
+
+    margin-left: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+#new-release, #calendar, #classement,#all-mangas{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+NOUVELLES SORTIES
+
+
+
+
+
+
+
+
+
+
+*/
+
+#new-release{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#new-release h2{
+
+    color: white;
+    font-size: 4em;
+    font-style: italic;
+
+}
+
+#card-manga-release{
+    width: 80%;
+    height: 60%;
+    background-color: blue;
+}
