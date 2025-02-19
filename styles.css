@@ -2,15 +2,49 @@
 
 *{
     margin: 0;
+    padding: 0;
     font-family: "Montserrat", serif;
+    color: whitesmoke;
 }
 
 body{
+    height: 100vh;
+    width: 100%;
     background-image: url("img/fond.svg");
     background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
 }
 
-/*
+#header-mobile{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    #header-desktop{
+        display: none;
+    }
+    #header-mobile{
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #header-mobile-logo{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            font-size: 1em;
+        }
+    }
+    
+}
+
+/* 
 
 
 
@@ -32,264 +66,196 @@ HEADER
 
 
 
-*/
 
+
+
+*/
 header{
-    position: relative;
+    margin: 0 auto;
+    width: 70%;
     height: 8vh;
+    display: grid;
+    grid-template-columns: 25% 1fr 10%;
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header-logo h2 {
+    font-size: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header h1{
-    margin-left: 10px;
-    color: azure;
-    font-size: 1.2em;
-
-}
-
-header a h1:hover{
-    color: rgb(36, 236, 254);
-}
-
-#headerLogo{
-    align-items: center;
-    display: flex;
-}
-
-#headerLogo img{
-    border: 0px;
-    transform: scale(1.2);
-    border-radius: 100%;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    list-style: none;
-    
-    a{
-        position: relative;
-        font-size: 0.9em;
-        text-decoration: none;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: azure;
-        margin: 0 15px;
-    }
-
-    a:hover{
-        color: rgb(36, 236, 254);
-    }
-    
-    a::after{
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0px;
-        width: 0;
-        height: 2px;
-        background-color: rgb(36, 236, 254);
-        transition: width 0.2s ease-in;
-    }
-
-    a:hover::after{
-        width: 100%;
-    }
-}
-
-#headerLogIn{
-    padding: 10px;
-    border-radius: 100%;
-    border: 2px solid black;
-}
-
-#searchBar{
-    border: none;
-    border-radius: 15px;
-    padding: 10px 200px 10px 15px;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    color: white;
-    transform: scale(1.5);
-}
-
-.material-symbols-outlined:hover{
-    color: rgb(36, 236, 254);
-}
-
-/*
-
-
-
-
-
-
-
-
-
-
-PREMIERE PAGE
-
-
-
-
-
-
-
-
-
-
-*/
-
-#first-page{
-    position: relative;
-    top: 20px;
-    height: 92vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#first-page-manga-genre{
-    
-    position: absolute;
-    top: 6%;
-    margin: 0 auto;
-    color: white;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.7em;
-}
-
-#first-page h2{
-    
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    translate: -50% -50%;
-    text-align: center;
-    font-size: 4.5em;
-    z-index: -1;
-    font-style: italic;
-    text-transform: uppercase;
-    color: white;
-}
-
-#first-page img {
-    align-self: center;
-    position: relative;
-    top: 15%;
-    transform: scale(1.1);
-}
-
-#first-page-manga-synopsis{
-    position: relative;
-    left: 15%;
-    width: 25%;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: white;
-}
-
-#partie-droite{
-    
-    position: relative;
-    left: 25%;
-    bottom: 10%;
-    width: 35%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#partie-droite-bouton{
-    margin-left: 20px;
-    cursor: pointer;
-    padding: 10px 25px;
-    background-color: rgb(77, 128, 165);
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 20px;
-    border: 0px;
-    transform: scale(1.25);
-}
-
-#partie-droite-bouton:hover{
-    background-color: rgb(55, 96, 125)
-}
-
-#manga-chapter{
-
-    margin-left: 20px;
-    color: whitesmoke;
-    font-weight: 500;
-}
-
-#new-release, #calendar, #classement,#all-mangas{
-    height: 100vh;
-    width: 100vw;
-}
-
-/*
-
-
-
-
-
-
-
-
-
-
-NOUVELLES SORTIES
-
-
-
-
-
-
-
-
-
-
-*/
-
-#new-release{
-    
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+.nav-link{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+.nav-link:hover{
+    color: rgb(36, 236, 254);
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -10px;
+    left: 0;
+    background-color: rgb(36, 236, 254);
+    transition: width 0.3s ease-in-out;
+    
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    
+}
+
+#header-login{
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-#new-release h2{
-
+    text-decoration: none;
     color: white;
-    font-size: 4em;
-    font-style: italic;
+}
+
+#header-login-svg:hover{
+    fill: rgb(36, 236, 254);
+    transition: fill 0.5s ease-in-out;
+}
+
+#mobile-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    z-index: 999;
+    list-style: none;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.75);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    
 
 }
 
-#card-manga-release{
-    width: 80%;
-    height: 60%;
-    background-color: blue;
+#mobile-sidebar li{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mobile-nav-link{
+    position: relative;
+    width: 100%;
+    margin-left: 25px;
+    text-decoration: none;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mobile-nav-link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(36, 236, 254);
+    transition: width 0.3s ease-in-out;
+    
+}
+
+.mobile-nav-link:hover::after{
+    width: 100%;
+    
+}
+
+#open-menu:hover, #close-menu:hover{
+    fill: rgb(36, 236, 254);
+    transition: fill 0.5s ease-in-out;
+}
+
+.mobile-nav-link:hover{
+    color: rgb(36, 236, 254);
+    transition: color 0.5s ease-in-out;
+}
+
+#mobile-sidebar li:first-child {
+    margin-bottom: 30px; /* Espace entre le bouton et les liens */
+}
+#side-bar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#bottom-link a{
+    position: absolute;
+    width: auto;
+    bottom: 30px;
+    left: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+MAIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+main {
+    height: 92vh;
 }
