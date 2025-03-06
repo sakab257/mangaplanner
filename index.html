@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaPlanner</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <!--Icones venues de Google-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
 </head>
 <body>
     <header id="header-desktop">
-        <div id="header-logo">
+        <a id="header-logo" href="index.html" style="text-decoration: none;">
             <img src="img/logo.png" width="50" height="50">
             <h2>MangaPlanner</h2>
-        </div>
+        </a>
         <nav>
             <ul>
-                <li><a href="#" class="nav-link">Nouvelles sorties</a></li>
-                <li><a href="#" class="nav-link">Calendrier</a></li>
-                <li><a href="#" class="nav-link">Top mangas</a></li>
-                <li><a href="#" class="nav-link">Tous les mangas</a></li>
+                <li><a href="new-release.html" class="nav-link">Nouvelles sorties</a></li>
+                <li><a href="calendar.html" class="nav-link">Calendrier</a></li>
+                <li><a href="top-mangas.html" class="nav-link">Top mangas</a></li>
+                <li><a href="all-mangas.html" class="nav-link">Tous les mangas</a></li>
             </ul>
         </nav>
         <a href="#" id="header-login">
@@ -27,10 +28,10 @@
         </a>
     </header>
     <header id="header-mobile">
-        <div id="header-mobile-logo">
+        <a href="index.html" id="header-mobile-logo" style="text-decoration: none;">
             <img src="img/logo.png" width="50" height="50">
             <h3>MangaPlanner</h3>
-        </div>
+        </a>
         <div id="side-bar-menu">
             <div style="cursor: pointer;">
                 <a onclick=showSideBar() href="#"><svg id="open-menu" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
@@ -38,10 +39,10 @@
             <div>
                 <ul id="mobile-sidebar">
                     <li><a onclick=hideSideBar() href="#"><svg id="close-menu" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#" class="mobile-nav-link">Nouvelles sorties</a></li>
-                    <li><a href="#" class="mobile-nav-link">Calendrier</a></li>
-                    <li><a href="#" class="mobile-nav-link">Top mangas</a></li>
-                    <li><a href="#" class="mobile-nav-link">Tous les mangas</a></li>
+                    <li><a href="new-release.html" class="mobile-nav-link">Nouvelles sorties</a></li>
+                    <li><a href="calendar.html" class="mobile-nav-link">Calendrier</a></li>
+                    <li><a href="top-mangas.html" class="mobile-nav-link">Top mangas</a></li>
+                    <li><a href="all-mangas.html" class="mobile-nav-link">Tous les mangas</a></li>
                     <li id="bottom-link"><a class="mobile-nav-link" href="#">Se connecter</a></li>
                 </ul>
             </div>
