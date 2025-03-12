@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaPlanner</title>
+    <link rel="stylesheet" href="style/index-style.css">
     <link rel="stylesheet" href="style/styles.css">
+    
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <!--Icones venues de Google-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <script src="/script/script.js" defer></script>
 </head>
 <body>
     <header id="header-desktop">
         <div id="header-logo">
             <img src="img/logo.png" width="50" height="50">
-            <h2>MangaPlanner</h2>
+            <h2><a href="index.html" style="text-decoration: none;text-transform: none;">MangaPlanner</a></h2>
         </div>
         <nav>
             <ul>
@@ -30,7 +33,7 @@
     <header id="header-mobile">
         <div id="header-mobile-logo">
             <img src="img/logo.png" width="50" height="50">
-            <h3>MangaPlanner</h3>
+            <h3><a href="index.html" style="text-decoration: none;">MangaPlanner</a></h3>
         </div>
         <div id="side-bar-menu">
             <div style="cursor: pointer;">
@@ -49,16 +52,31 @@
             
         </div>
     </header>
-    <main>
+    <main id="main-mobile">
         <p id="genre">Aventure / Comédie / Shonen / Fantaisie</p>
         <h2 id="title">One Piece</h2>
         <img src="img/jilmbei.png" width="450" height="450" alt="Image de jimbei">
         <div id="main-bottom">
             <p id="description">"Monkey D. Luffy, un jeune pirate élastique, parcourt les mers avec son équipage en quête de trouver le légendaire trésor "One Piece" et devenir le Roi des Pirates."</p>
-            <a href="#" id="readBtn">Lire</a>
+            <a href="#" class="readBtn">Lire</a>
+        </div>
+    </main>
+    <main id="main-desktop">
+        <div id="img-desktop-container">
+            <img id="img-desktop" src="img/jilmbei.png" width="450" height="450" alt="Image de jimbei">
+        </div>
+        <div id="other-desktop-container">
+            <div id="main-top-desktop">
+                <p id="genre-desktop">Aventure / Comédie / Shonen / Fantaisie</p>
+                <h2 id="title-desktop">One Piece</h2>
+            </div>
+            <div id="main-bottom-desktop">
+                <p id="description-desktop">"Monkey D. Luffy, un jeune pirate élastique, parcourt les mers avec son équipage en quête de trouver le légendaire trésor "One Piece" et devenir le Roi des Pirates."</p>
+                <a href="#" class="readBtn">Lire</a>
+            </div>
         </div>
     </main>
 
-    <script src="script/script.js" defer></script>
+    
 </body>
 </html>
