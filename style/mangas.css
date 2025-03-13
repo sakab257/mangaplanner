@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 10px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+}
+
+#filter-select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+}
+
+#manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#load-more {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: #ff5722;
+}
+
+.manga-card {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.manga-card:hover {
+    transform: scale(1.05);
+}
+
+.manga-card img {
+    width: 100%; /* Garde la largeur responsive */
+    height: 400px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Coupe l'image pour qu'elle remplisse bien la carte */
+    border-radius: 5px;
+}
+
+
+.manga-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.manga-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.manga-score {
+    color: gold;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view-more-btn {
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    background-color: #ff5722;
+}
+
